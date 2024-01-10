@@ -1,0 +1,48 @@
+.TabContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    font-size: xx-small;
+    overflow: hidden;
+}
+
+.TabContainer {
+    background-image: linear-gradient(to bottom, rgb(77, 251, 33), green);
+    color: white;
+    border-radius: 30px;
+}
+
+.Link {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.Link:hover {
+    text-decoration:overline;
+    height: 100%;
+    font-size: larger;
+    transition: 0.5s ease-in-out;
+}
+
+.Link:not(hover) {
+    transition: 0.5s ease-in-out;
+}
+
+.Link:focus {
+    text-decoration:overline;
+    height: 100%;
+    font-size: larger;
+    transition: 0.5s ease-in-out;
+    background-color: green;
+}
+
+button{
+    all: unset;
+}

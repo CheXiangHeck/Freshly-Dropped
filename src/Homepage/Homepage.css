@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Dhurjati&family=Hedvig+Letters+Serif:opsz@12..24&family=Kanit&family=Ma+Shan+Zheng&family=Noto+Serif:wght@300;400&family=Oswald:wght@200;600&family=Rubik+Bubbles&family=Rubik+Doodle+Shadow&family=Silkscreen&family=ZCOOL+QingKe+HuangYou&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+.First-Content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%)
+}
+
+.First-Content video {
+    width: 100%;
+    height: 100%;
+}
+
+.Content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Second {
+    background-image: linear-gradient(to bottom, black, green, lightgreen);
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Second h1 {
+    font-family: 'Rubik Doodle Shadow';
+    color: white;
+}
+
+.Second p {
+    color: white;
+    font-family: 'Salsa';
+    font-weight: bold;
+    font-size: large;
+}
+
+button {
+    all: unset;
+}
+
+#Share {
+    padding: 20px;
+    width: 75px;
+    border: 3px white solid;
+    border-radius: 50px;
+    color: white;
+    font-family: 'Salsa';
+    cursor: pointer;
+}
+
+#Share:hover {
+    background-color: white;
+    color: green;
+    transition: 0.5s ease-in-out;
+}
+
+#Share:not(hover){
+    transition: 0.5s ease-in-out;
+}

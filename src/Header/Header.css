@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Dhurjati&family=Hedvig+Letters+Serif:opsz@12..24&family=Kanit&family=Ma+Shan+Zheng&family=Noto+Serif:wght@300;400&family=Oswald:wght@200;600&family=Rubik+Bubbles&family=Rubik+Doodle+Shadow&family=Silkscreen&family=ZCOOL+QingKe+HuangYou&display=swap');
+
+.TopContainer{
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+}
+
+.Logo {
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Rubik Doodle Shadow';
+    cursor:alias;
+    border-radius: 10px;
+}
+
+.Logo:hover {
+    transition: 1s ease-in-out;
+    background-color: white;
+    color: black;
+}
+
+.Logo:not(hover){
+    transition: 1s ease-in-out;
+}
+
+.Social-Media{
+    margin: 10px;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.Social-Media:hover {
+    background-color: white;
+    transition: 1s ease-in-out;
+}
+
+.Social-Media:not(hover){
+    transition: 1s ease-in-out;
+}
+
+.Social-Icon {
+    height: 100%;
+    width: 30%;
+}
+
+.Social-Icon button:hover{
+    cursor: pointer;
+}
+
+.Social-Icon img {
+    height: 75%;
+    width: 75%;
+}
