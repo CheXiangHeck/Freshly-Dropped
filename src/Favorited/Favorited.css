@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Dhurjati&family=Hedvig+Letters+Serif:opsz@12..24&family=Kanit&family=Ma+Shan+Zheng&family=Noto+Serif:wght@300;400&family=Oswald:wght@200;600&family=Rubik+Bubbles&family=Rubik+Doodle+Shadow&family=Silkscreen&family=ZCOOL+QingKe+HuangYou&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
 
 .Content-page {
     width: 100%;
@@ -26,8 +27,108 @@
 }
 
 .Content-Second {
-    height: 550px;
+    padding-top: 20px;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    background-color: dimgray;
+}
 
+.Favorite-Search {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+#Searching {
+    border-radius: 20px;
+    width: 200px;
+    height: 30px;
+    border: lawngreen 4px solid;
+    font-family: 'Rubik Doodle Shadow';
+}
+
+.SearchButton {
+    height: 50px;
+    width: 50px;
+    background-color: lawngreen;
+    border-radius: 100%;
+    border: green solid 3px;
+}
+
+.SearchButton img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#Searching:focus {
+    border-color:green;
+    outline: none;
+}
+
+.Favorite-Content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin-top: 50px;
+    border-top: green solid 3px;
+    border-bottom: green solid 3px;
+    background-color: antiquewhite;
+    gap: 20px;
+}
+
+.Fav-Content {
+    height: 100%;
+    width: 250px;
+    border: solid black 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, rgba(195, 255, 0, 0.5), rgba(72, 255, 0, 0.5), green);
+}
+
+.Fav-Content-Title {
+    overflow: hidden;
+    width: 100%;
+    color: white;
+    font-family: 'Salsa';
+    font-weight: bolder;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Fav-Context {
+    width: 80%;
+    height: 60%;
+    font-size: small;
+    border: 3px solid green;
+    border-radius: 20px;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.Fav-Context::-webkit-scrollbar {
+    display: none;
+}
+
+.Fav-Author {
+    width: fit-content;
+    height: 10%;
+    float: right;
+    font-size: x-small;
 }
 
 @media (width < 720px) {

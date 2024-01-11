@@ -45,14 +45,12 @@ export default function Homepage() {
                         <source src="./IT'SFKINGRAW.mp4"></source>
                     </video>
                     <button id="Pause" className={ButtonImage} onClick={() => Pause()}></button>
-                    {/* <button></button> */}
                 </div>
                 <div className="Second">
                     <h1>
                         Welcome to Freshly Dropped
                     </h1>
                     <p>Cook it fresh, Eat it fresh</p>
-                    <button id="Share">Share</button>
                 </div>
                 <div className="Content Last">
                     <div className="Context">
