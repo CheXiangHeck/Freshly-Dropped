@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Dhurjati&family=Hedvig+Letters+Serif:opsz@12..24&family=Kanit&family=Ma+Shan+Zheng&family=Noto+Serif:wght@300;400&family=Oswald:wght@200;600&family=Rubik+Bubbles&family=Rubik+Doodle+Shadow&family=Silkscreen&family=ZCOOL+QingKe+HuangYou&display=swap');
+
+.Content-page {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-image: linear-gradient(to left, rgba(23, 114, 5, 0.5), rgba(43, 255, 0, 0.5), rgba(195, 254, 0, 0.5)), url('./Image/ChefCooking.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Rubik Doodle Shadow';
+    color: aliceblue;
+    gap: 0;
+}
+
+.Content p{
+    font-size: 50px;
+}
+
+.Content h1 {
+    font-size: 150px;
+}
+
+.Content-Second {
+    height: 550px;
+
+}

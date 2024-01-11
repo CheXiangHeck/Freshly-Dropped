@@ -2,6 +2,7 @@ import Tab from "../Tab/Tab"
 import Header from "../Header/Header"
 import './Homepage.css'
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
 
 export default function Homepage() {
     const [windowHeight, setwindowHeight] = useState(window.innerHeight);
@@ -46,7 +47,7 @@ export default function Homepage() {
                     <button id="Pause" className={ButtonImage} onClick={() => Pause()}></button>
                     {/* <button></button> */}
                 </div>
-                <div className="Content Second">
+                <div className="Second">
                     <h1>
                         Welcome to Freshly Dropped
                     </h1>
@@ -55,10 +56,10 @@ export default function Homepage() {
                 </div>
                 <div className="Content Last">
                     <div className="Context">
-                        <h1 data-text="Shopping">Shopping</h1>
+                        <h1 data-text="Shopping"><Link className="Linking" to="/Shopping">Shopping</Link></h1>
                     </div>
                     <div className="Context">
-                        <h1 data-text="Favorited">Favorited</h1>
+                        <h1 data-text="Favorited"><Link className="Linking" to="/Favorited">Favorited</Link></h1>
                     </div>
                     <div className="Middle">
                         <h1>Freshly Dropped</h1>

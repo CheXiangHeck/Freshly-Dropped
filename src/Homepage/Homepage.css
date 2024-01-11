@@ -47,6 +47,9 @@
 }
 
 .Second {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     background-image: linear-gradient(to bottom, black, green, lightgreen);
     height: 500px;
     justify-content: center;
@@ -121,6 +124,10 @@ button {
     text-transform: uppercase;
     cursor: pointer;
     font-size: 50px;
+}
+
+.Context h1 .Linking {
+    all:unset;
 }
 
 .Context h1:hover {
