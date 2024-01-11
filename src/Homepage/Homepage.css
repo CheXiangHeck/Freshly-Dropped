@@ -115,6 +115,7 @@ button {
 }
 
 .Context h1 {
+    color: transparent;
     -webkit-text-stroke: 0.1vw #383d52;
     position: relative;
     text-transform: uppercase;
@@ -138,10 +139,7 @@ button {
     left: 0;
     width: 0;
     height: 100%;
-    background-image: url("./Image/Food.gif");
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-font-smoothing: antialiased; 
+    color: olivedrab;
     overflow: hidden;
     z-index: 2;
     -webkit-text-stroke: 0.1vw #383d52;
