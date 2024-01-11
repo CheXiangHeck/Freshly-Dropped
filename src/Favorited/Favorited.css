@@ -17,15 +17,28 @@
     gap: 0;
 }
 
-.Content p{
+.Content-page p{
     font-size: 50px;
 }
 
-.Content h1 {
+.Content-page h1 {
     font-size: 150px;
 }
 
 .Content-Second {
     height: 550px;
 
+}
+
+@media (width < 720px) {
+    .Content-page {
+        overflow: hidden;
+    }
+
+    .Content-page h1 {
+        font-size: 75px;
+    }
+    .Content-page p {
+        font-size: 25px;
+    }
 }
