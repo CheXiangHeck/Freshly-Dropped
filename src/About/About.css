@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Oswald&display=swap');
+:root{
+    --Def-text-color: white;
+    --Main-font: 'Lemon';
+    --Sub-font: 'Oswald';
+}
+
+.App {
+    background-image: linear-gradient(to right, rgba(217, 255, 0, 0.5), rgba(43, 255, 0, 0.529), rgba(0, 255, 157, 0.5)), url('./Image/BackgroundImageAbout.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#AboutPage {
+    opacity: 0;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--Def-text-color);
+    animation: ShadeIn 1s 1s ease-in-out forwards;
+}
+
+.About {
+    width: 100%;
+}
+
+.About:nth-child(2) {
+    background-image: url('./Image/Star.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200%;
+    animation: SecUp 1s 1s ease-in-out forwards;
+}
+
+.About:nth-child(2) h1 {
+    background-image: none;
+    background-color: white;
+    font-size: 75px;
+}
+
+.WhyFreshly {
+    height: 400px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.TextContainerWhy {
+    overflow: hidden;
+    height: 120px;
+}
+
+.TextContainerWhy p {
+    animation: TextGoUp 12s 2s ease-in-out forwards;
+}
+
+@keyframes TextGoUp {
+    12.5%{
+        transform: translateY(0);
+    }
+     25% {
+        transform: translateY(-154px);
+    }
+    37.5% {
+        transform: translateY(-308px);
+    }
+    50% {
+        transform: translateY(-442px);
+    }
+    62.5% {
+        transform: translateY(-546px);
+    }
+    75% {
+        transform: translateY(-650px);
+    }
+    87.5% {
+        transform: translateY(-794px);
+    }
+    100% {
+        transform: translateY(-908px);
+    }
+}
+
+.AboutTitle h1 {
+    color: white;
+}
+
+.GoUpAnimate {
+    animation: GoUp 1s ease-in-out forwards;
+}
+
+.About h1 {
+    font-size: 100px;
+    font-family: var(--Main-font);
+    background-image: linear-gradient(to left, rgba(23, 114, 5, 0.5), rgba(43, 255, 0, 0.5), rgba(195, 254, 0, 0.5)),url('./Image/ChefCooking.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.About p {
+    font-family: 'Oswald';
+    font-size: 50px;
+}
+
+@keyframes ShadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.About img {
+    background-color: white;
+    clip-path: polygon(10% 35%, 90% 35%, 50% 75%, 10% 35%);
+    -webkit-clip-path: polygon(10% 35%, 90% 35%, 50% 75%, 10% 35%);
+    cursor: pointer;
+    animation: UpDown 3s ease-in-out infinite forwards;
+}
+
+@keyframes UpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
+
+@keyframes GoUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes SecUp {
+    0% {
+        display: none;
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    25% {
+        display: flex;
+        opacity: 0.3;
+    }
+    100% {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (width < 720px) {
+    .About h1 {
+        font-size: 75px;
+    }
+}
