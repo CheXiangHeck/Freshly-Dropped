@@ -6,10 +6,7 @@
 }
 
 .App {
-    background-image: linear-gradient(to right, rgba(217, 255, 0, 0.5), rgba(43, 255, 0, 0.529), rgba(0, 255, 157, 0.5)), url('./Image/BackgroundImageAbout.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(217, 255, 0, 0.5), rgba(43, 255, 0, 0.529), rgba(0, 255, 157, 0.5));
 }
 
 #AboutPage {
