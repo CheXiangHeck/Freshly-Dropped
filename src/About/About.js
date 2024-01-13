@@ -1,6 +1,8 @@
 import Tab from "../Tab/Tab"
 import './About.css'
 import { useState, useEffect } from "react"
+import Spline from '@splinetool/react-spline';
+
 
 export default function About(){
     const [AboutHeight, setAboutHeight] = useState(window.innerHeight);
@@ -72,10 +74,12 @@ export default function About(){
                             <p>Start COOKING with Freshly Dropped</p>
                             <p>#Freshly</p>
                         </div>
-                        <div className="ReasonFreshly">
-
-                        </div>
                     </div>
+                    <div className="SplineViewer">
+                        <Spline scene="https://prod.spline.design/2NdBT9FMHJDeDcaq/scene.splinecode" />
+                    </div>
+                </div>
+                <div className="About" id="Third">
                 </div>
             </div>
         </>

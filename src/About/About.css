@@ -18,22 +18,14 @@
     animation: ShadeIn 1s 1s ease-in-out forwards;
 }
 
-.About {
-    width: 100%;
-}
-
 .About:nth-child(2) {
-    background-image: url('./Image/Star.gif');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     opacity: 0;
     display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 200%;
+    height: 100%;
     animation: SecUp 1s 1s ease-in-out forwards;
 }
 
@@ -50,11 +42,19 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    border-radius: 30px;
+    animation: boxMovement 12s 2s ease-in-out forwards;
+}
+
+.About:nth-child(3) {
+    display: none;
+    height: 100%;
 }
 
 .TextContainerWhy {
     overflow: hidden;
     height: 120px;
+    border-radius: 30px;
 }
 
 .TextContainerWhy p {
@@ -111,6 +111,15 @@
 .About p {
     font-family: 'Oswald';
     font-size: 50px;
+}
+
+.SplineViewer {
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
 }
 
 @keyframes ShadeIn {
