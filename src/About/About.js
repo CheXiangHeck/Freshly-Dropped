@@ -78,6 +78,9 @@ export default function About(){
                     <div className="SplineViewer">
                         <Spline scene="https://prod.spline.design/2NdBT9FMHJDeDcaq/scene.splinecode" />
                     </div>
+                    <button className="ThirdPage" onClick={() => NextPage(1)}>
+                        Who is Freshly Dropped
+                    </button>
                 </div>
                 <div className="About" id="Third">
                 </div>

@@ -54,11 +54,10 @@
 .TextContainerWhy {
     overflow: hidden;
     height: 120px;
-    border-radius: 30px;
 }
 
 .TextContainerWhy p {
-    animation: TextGoUp 12s 2s ease-in-out forwards;
+    animation: TextGoUp 18s 1s ease-in-out forwards;
 }
 
 @keyframes TextGoUp {
@@ -180,7 +179,44 @@
     }
 }
 
-@media (width < 720px) {
+@media (width <= 720px) {
+    
+@keyframes TextGoUp {
+    12.5%{
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-80px);
+    }
+
+    37.5% {
+        transform: translateY(-154px);
+    }
+    50% {
+        transform: translateY(-302px);
+    }
+    62.5% {
+        transform: translateY(-442px);
+    }
+    75% {
+        transform: translateY(-546px);
+    }
+    87.5% {
+        transform: translateY(-650px);
+    }
+    100% {
+        transform: translateY(-774px);
+    }
+}
+
+    .About:nth-child(2) h1{
+        font-size: 50px;
+    }
+
+    .About:nth-child(2) p {
+        font-size: 30px;
+    }
+
     .About h1 {
         font-size: 75px;
     }
