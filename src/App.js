@@ -6,6 +6,7 @@ import Homepage from './Homepage/Homepage';
 import Favorited from './Favorited/Favorited';
 import Shopping from './Shopping/Shopping';
 import About from './About/About';
+import AddFavorite from './Favorited/AddFavorite';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/Favorited" element={<Favorited/>}/>
           <Route path="/Shopping" element={<Shopping/>}/>
           <Route path="/About" element={<About/>}/>
+          <Route path="/AddFavorite" element={<AddFavorite/>}/>
         </Routes>
       </Router>
     </div>

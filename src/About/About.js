@@ -83,6 +83,9 @@ export default function About(){
                     </button>
                 </div>
                 <div className="About" id="Third">
+                    <div>
+                        <iframe src='https://my.spline.design/untitled-951dc52999133828cee940f9f8baa910/' frameborder='0' width='100%' height='100%'></iframe>
+                    </div>
                 </div>
             </div>
         </>
