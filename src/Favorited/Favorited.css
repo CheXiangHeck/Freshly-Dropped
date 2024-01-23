@@ -98,6 +98,7 @@
     border-bottom: green solid 3px;
     background-color: antiquewhite;
     gap: 20px;
+    overflow-y: hidden;
 }
 
 .Fav-Content {

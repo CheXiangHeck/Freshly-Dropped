@@ -2,12 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
 
 .First-Content {
+    background-color: green;
     position: relative;
     width: 100%;
+    height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%)
 }
 
 .First-Content video {
@@ -50,7 +51,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-image: linear-gradient(to bottom, black, green, lightgreen);
+    background-image: linear-gradient(to bottom, green, lightgreen);
     height: 500px;
     justify-content: center;
     align-items: center;
@@ -152,7 +153,6 @@ button {
     color: limegreen;
     overflow: hidden;
     z-index: 2;
-    -webkit-text-stroke: 0.1vw #383d52;
 }
 
 .Context h1:hover::before {
@@ -193,6 +193,10 @@ button {
 }
 
 @media (width < 720px){
+    .First-Content {
+        height: 400px;
+    }
+
     .Last {
         flex-direction: column;
     }

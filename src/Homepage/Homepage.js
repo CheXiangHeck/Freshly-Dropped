@@ -5,21 +5,7 @@ import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
 export default function Homepage() {
-    const [windowHeight, setwindowHeight] = useState(window.innerHeight);
     const [ButtonImage, setButtonImage] = useState("Pause");
-
-    const handleResize = () => {
-        setwindowHeight(window.innerHeight);    
-    }
-
-    useEffect(() => {
-        window.addEventListener('resize', handleResize)
-        var Content = document.getElementById("First-Content");
-        Content.style.height = `${windowHeight}px`;
-        return () => {
-            window.removeEventListener('resize', handleResize)
-        }
-    },[windowHeight])
 
     const Pause = () => {
         var Content = document.getElementById("Gordon");

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Oswald&display=swap');
 .ContentBox {
     display: flex;
     flex-direction: row;
@@ -33,7 +34,31 @@
 }
 
 form {
+    font-family: 'Oswald';
     margin:auto;
     display: grid;
     padding: 50px;
+    color: white;
+}
+
+form input {
+    margin: 10px;
+}
+
+form textarea {
+    height: 100px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+#SubmitButton{
+    font-family: 'Oswald';
+    background-image: linear-gradient(to left, green, lightgreen);
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    margin: auto;
+    border: 1px solid black;
+    cursor: pointer;
+    color: white;
 }

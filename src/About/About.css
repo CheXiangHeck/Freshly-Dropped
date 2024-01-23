@@ -1,223 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Oswald&display=swap');
-:root{
-    --Def-text-color: white;
-    --Main-font: 'Lemon';
-    --Sub-font: 'Oswald';
+.About-Page {
+    scroll-behavior: smooth;
+    scroll-snap-type: both mandatory;
+    overflow-y: scroll;
 }
 
-#AboutPage {
-    opacity: 0;
-    width: 100%;
-    background-color: black;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--Def-text-color);
-    animation: ShadeIn 1s 1s ease-in-out forwards;
+.About-Content {
+    scroll-snap-align: center;
 }
 
-.About:nth-child(2) {
-    opacity: 0;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    animation: SecUp 1s 1s ease-in-out forwards;
+.About-Content:nth-child(1){
+    height: 500px;
+    display: grid;
 }
 
-.About:nth-child(2) h1 {
-    background-image: none;
-    background-color: white;
-    font-size: 75px;
+.About-Content:nth-child(2){
+    height: 600px;
+    background-color: greenyellow;
 }
 
-.WhyFreshly {
+.About-Content:nth-child(3){
     height: 400px;
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    animation: boxMovement 12s 2s ease-in-out forwards;
-}
-
-.About:nth-child(3) {
-    display: none;
-    height: 100%;
-}
-
-.TextContainerWhy {
-    overflow: hidden;
-    height: 120px;
-}
-
-.TextContainerWhy p {
-    animation: TextGoUp 18s 1s ease-in-out forwards;
-}
-
-@keyframes TextGoUp {
-    12.5%{
-        transform: translateY(0);
-    }
-     25% {
-        transform: translateY(-154px);
-    }
-    37.5% {
-        transform: translateY(-308px);
-    }
-    50% {
-        transform: translateY(-442px);
-    }
-    62.5% {
-        transform: translateY(-546px);
-    }
-    75% {
-        transform: translateY(-650px);
-    }
-    87.5% {
-        transform: translateY(-794px);
-    }
-    100% {
-        transform: translateY(-908px);
-    }
-}
-
-.AboutTitle h1 {
-    color: white;
-}
-
-.GoUpAnimate {
-    animation: GoUp 1s ease-in-out forwards;
-}
-
-.About h1 {
-    font-size: 100px;
-    font-family: var(--Main-font);
-    background-image: linear-gradient(to left, rgba(23, 114, 5, 0.5), rgba(43, 255, 0, 0.5), rgba(195, 254, 0, 0.5)),url('./Image/ChefCooking.gif');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-}
-
-.About p {
-    font-family: 'Oswald';
-    font-size: 50px;
-}
-
-.SplineViewer {
-    display: block;
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -2;
-}
-
-@keyframes ShadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.About img {
-    background-color: white;
-    clip-path: polygon(10% 35%, 90% 35%, 50% 75%, 10% 35%);
-    -webkit-clip-path: polygon(10% 35%, 90% 35%, 50% 75%, 10% 35%);
-    cursor: pointer;
-    animation: UpDown 3s ease-in-out infinite forwards;
-}
-
-@keyframes UpDown {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(20px);
-    }
-}
-
-@keyframes GoUp {
-    0% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    50% {
-        opacity: 0.3;
-    }
-    100% {
-        opacity: 0;
-        display: none;
-        transform: translateY(-100%);
-    }
-}
-
-@keyframes SecUp {
-    0% {
-        display: none;
-        opacity: 0;
-        transform: translateY(100%);
-    }
-    25% {
-        display: flex;
-        opacity: 0.3;
-    }
-    100% {
-        display: flex;
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@media (width <= 720px) {
-    
-@keyframes TextGoUp {
-    12.5%{
-        transform: translateY(0);
-    }
-    25% {
-        transform: translateY(-80px);
-    }
-
-    37.5% {
-        transform: translateY(-154px);
-    }
-    50% {
-        transform: translateY(-302px);
-    }
-    62.5% {
-        transform: translateY(-442px);
-    }
-    75% {
-        transform: translateY(-546px);
-    }
-    87.5% {
-        transform: translateY(-650px);
-    }
-    100% {
-        transform: translateY(-774px);
-    }
-}
-
-    .About:nth-child(2) h1{
-        font-size: 50px;
-    }
-
-    .About:nth-child(2) p {
-        font-size: 30px;
-    }
-
-    .About h1 {
-        font-size: 75px;
-    }
+    background-color: chartreuse;
 }
