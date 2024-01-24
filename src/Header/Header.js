@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Header.css'
 
 
@@ -21,7 +22,7 @@ export default function Header(){
     return (
         <>
             <div className="TopContainer">
-                <div className="Logo">Freshly Dropped</div>
+                <Link to="/" className="Logo">Freshly Dropped</Link>
                 <div className="Social-Media">
                     {Icon.map((Social,index) => (
                         <div className="Social-Icon" key={Social.icon}>

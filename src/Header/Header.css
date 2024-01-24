@@ -21,6 +21,7 @@
     font-family: 'Rubik Doodle Shadow';
     cursor:alias;
     border-radius: 10px;
+    text-decoration: none;
 }
 
 .Logo:hover {
