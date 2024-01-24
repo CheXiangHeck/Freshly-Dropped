@@ -26,7 +26,7 @@ export default function Header(){
                 <div className="Social-Media">
                     {Icon.map((Social,index) => (
                         <div className="Social-Icon" key={Social.icon}>
-                            <button onClick={() => SocialLink(Social.icon)}><img src={Social.icon} alt={Social.icon}></img></button>
+                            <button onClick={() => SocialLink(Social.icon)}><img className="Social-Media-Icon" src={Social.icon} alt={Social.icon}></img></button>
                         </div>
                     ))}
                 </div>

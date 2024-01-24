@@ -194,7 +194,7 @@ button {
 
 @media (width < 720px){
     .First-Content {
-        height: 400px;
+        height: 300px;
     }
 
     .Last {
