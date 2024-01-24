@@ -16,6 +16,10 @@
     scroll-snap-align: center;
 }
 
+.About-title{
+    font-size: 40px;
+}
+
 .About-Content:nth-child(1){
     background: seagreen;
     height: 500px;
