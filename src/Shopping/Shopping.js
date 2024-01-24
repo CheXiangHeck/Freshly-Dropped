@@ -8,7 +8,7 @@ export default function Shopping(){
             <Header/>
             <div className="Shopping-Content">
                 <div className="Shopping-Filter">
-
+                    
                 </div>
                 <div className="Shopping-Items">
                     <div className="Shopping-Items-Log">
